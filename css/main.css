@@ -1,0 +1,227 @@
+a {
+  text-decoration: none; }
+
+html, body, content {
+  min-height: 100%;
+  margin: 10px 0;
+  font-family: 'Yanone Kaffeesatz', sans-serif; }
+  html h1, html h2, html h3, html h4, html p, body h1, body h2, body h3, body h4, body p, content h1, content h2, content h3, content h4, content p {
+    margin: 0; }
+  html h1, body h1, content h1 {
+    font-size: 60 px; }
+  html h2, body h2, content h2 {
+    font-size: 50 px; }
+  html h3, body h3, content h3 {
+    font-size: 40 px; }
+  html h4, body h4, content h4 {
+    font-size: 30 px; }
+  html p, body p, content p {
+    font-size: 20px; }
+
+body {
+  width: 100%;
+  margin: 0 auto; }
+
+.content {
+  width: 90%;
+  margin: 15px auto; }
+
+nav {
+  color: mediumturquoise;
+  padding-bottom: 10px;
+  border-bottom: 5px black solid;
+  font-weight: bold;
+  text-align: center;
+  align-items: center; }
+  nav a {
+    color: black; }
+  nav h2 {
+    font-size: 15px; }
+  nav span {
+    color: mediumturquoise; }
+  @media (min-width: 600px) {
+    nav h2 {
+      font-size: 20px; } }
+  nav .logo {
+    padding: 5px;
+    color: salmon;
+    font-size: 75px;
+    justify: center; }
+  nav .page-links {
+    padding: 5px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center; }
+    nav .page-links h2 {
+      margin: 0 5px; }
+    nav .page-links h2:hover {
+      color: black; }
+
+.home-section-header {
+  text-align: left;
+  color: mediumturquoise;
+  margin-top: 30px; }
+  .home-section-header a {
+    color: mediumturquoise; }
+
+.home-section-footer {
+  text-align: right;
+  color: mediumturquoise;
+  margin-bottom: 30px; }
+  .home-section-footer a {
+    color: mediumturquoise; }
+
+.home-section {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around; }
+  @media (min-width: 950px) {
+    .home-section {
+      -webkit-flex-flow: row;
+      flex-flow: row; } }
+  .home-section .about-image {
+    display: none;
+    height: 400px; }
+  @media (min-width: 600px) {
+    .home-section .about-image {
+      display: flex; } }
+  .home-section div {
+    margin: 10px; }
+  .home-section .work-row-div {
+    flex: 1; }
+  .home-section .testimonial-row-div {
+    flex: 1; }
+
+.work-main {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around; }
+
+.work-piece {
+  height: 350px;
+  width: 250px;
+  margin: 10px;
+  border: 8px #313131 solid;
+  background: url("../img/Wren-Bldg.jpg");
+  color: white;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around; }
+  .work-piece h3 {
+    width: 100%;
+    background-color: mediumturquoise; }
+
+.work-piece:hover {
+  border: 8px black solid; }
+
+.testimonials-main {
+  padding: 10px 0; }
+  .testimonials-main .testimonials-piece {
+    width: 85%;
+    background: rgba(72, 209, 204, 0.5);
+    margin: 10px auto;
+    padding: 5px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    font-weight: bold;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: space-between; }
+    .testimonials-main .testimonials-piece img {
+      width: 150px;
+      height: 150px;
+      margin-right: 5px;
+      border-radius: 50%; }
+    .testimonials-main .testimonials-piece div {
+      margin-left: 5px; }
+
+.about-main {
+  padding: 10px 0;
+  font-weight: bold;
+  text-align: left; }
+  .about-main img {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 50%; }
+  .about-main div {
+    margin-left: 5px; }
+
+.contact-main {
+  padding: 10px 0; }
+
+.resume-main {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+  font-weight: bold;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: space-around; }
+
+footer {
+  background-color: rgba(49, 49, 49, 0.25);
+  border-top: 5px black solid;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around; }
+  footer h2 {
+    flex: 1; }
+  footer h2:hover {
+    color: black; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,326 @@
+$main-color: black;
+$main-pop-color: rgb(72, 209, 204);
+$secondary-pop-color: rgb(250,128,114);
+$section-color: rgba(49, 49, 49, 0.25);
+
+a {
+	text-decoration: none;
+}
+
+
+html, body, content {
+	min-height: 100%;
+	margin: 10px 0;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	h1, h2, h3, h4, p {
+		margin: 0;
+	}
+	h1 {
+		font-size: 60 px;
+	}
+	h2 {
+		font-size: 50 px;
+	}
+	h3 {
+		font-size: 40 px;
+	}
+	h4 {
+		font-size: 30 px;
+	}
+	p {
+	font-size: 20px;
+	}
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.content {
+	width: 90%;
+	margin: 15px auto;
+}
+
+nav {
+	a {
+		color: $main-color;
+	}
+
+	h2 {
+		font-size: 15px;
+	}
+
+	span {
+		color: $main-pop-color;
+	}
+
+	@media (min-width: 600px) {
+	    h2	{
+	    	font-size: 20px;
+	    }
+	}
+
+	color: $main-pop-color;
+	padding-bottom: 10px;
+	border-bottom: 5px black solid;
+	
+	font-weight: bold;
+	text-align: center;
+	align-items: center;
+
+	.logo {
+		padding: 5px;
+		color: $secondary-pop-color;
+		font-size: 75px;
+		justify: center;
+	}
+	.page-links {
+		padding: 5px;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row;
+		flex-flow: row;
+		font-weight: bold;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+
+		h2 {
+			margin: 0 5px;
+		}
+
+		h2:hover {
+			color: black;
+		}
+	}
+}
+
+.home-section-header {
+	text-align: left;
+	color: $main-pop-color;
+	margin-top: 30px;
+	a {
+		color: $main-pop-color;
+	}
+}
+
+.home-section-footer {
+	text-align: right;
+	color: $main-pop-color;
+	margin-bottom: 30px;
+	a {
+		color: $main-pop-color;
+	}
+}
+
+.home-section {
+	padding: 10px 0;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	font-weight: bold;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+
+	@media (min-width: 950px) {
+	    -webkit-flex-flow: row;
+	    flex-flow: row;
+	}
+
+	.about-image {
+		display: none;
+		height: 400px;
+	}
+
+	@media (min-width: 600px) {
+	    .about-image {
+	    	display: flex;
+	    }
+	}
+
+	div {
+		margin: 10px;
+	}
+
+	.about-row-div {
+	}
+
+	.work-row-div {
+		flex: 1;
+	}
+
+	.testimonial-row-div {
+		flex: 1;
+	}
+
+}
+
+.work-main {
+	padding: 10px 0;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;  
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	font-weight: bold;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.work-piece {
+	height: 350px;
+	width: 250px;
+	margin: 10px;
+	border: 8px rgba(49, 49, 49, 1.0) solid;
+	background: url('../img/Wren-Bldg.jpg');
+	color: white;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;  
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	font-weight: bold;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+
+	h3 {
+		width: 100%;
+		background-color: $main-pop-color;
+	}
+}
+
+.work-piece:hover {
+	border: 8px black solid;
+}
+
+.testimonials-main {
+	padding: 10px 0;
+
+	.testimonials-piece {
+		width: 85%;
+		background: rgba(72, 209, 204, 0.5);
+		margin: 10px auto;
+		padding: 5px;
+
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row;
+		flex-flow: row;
+		font-weight: bold;
+		text-align: left;
+		align-items: flex-start;
+		justify-content: space-between;
+
+
+		img {
+			width: 150px;
+			height: 150px;
+			margin-right: 5px;
+			border-radius: 50%;
+		}
+		div {
+			margin-left: 5px;
+		}
+	}	
+}
+
+.about-main {
+	padding: 10px 0;
+
+	font-weight: bold;
+	text-align: left;
+
+	img {
+		float: left;
+		height: 200px;
+		width: 200px;
+		margin-right: 10px;
+		border-radius: 50%;
+	}
+	div {
+		margin-left: 5px;
+	}
+}
+
+.contact-main {
+	padding: 10px 0;
+
+}
+
+.resume-main {
+	padding: 10px 0;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row;
+	flex-flow: row;
+	font-weight: bold;
+	text-align: left;
+	align-items: flex-start;
+	justify-content: space-around;
+
+}
+
+
+footer {
+	background-color: $section-color;
+	border-top: 5px black solid;
+	min-height: 300px;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;  
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	font-weight: bold;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+
+	h2 {
+		flex: 1;
+	}
+
+	h2:hover {
+		color: black;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

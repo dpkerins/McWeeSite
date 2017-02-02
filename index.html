@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>McWee's Portfolio Site!</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	 <!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<!-- Include the AngularJS routing library -->
+	<script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+</head>
+<body ng-app="McweeSite">
+	<nav>
+		<div class="logo">
+			<a href="#/"><div><span>F</span>reeverse <span>E</span>ditorial</div></a>
+		</div>
+		<div class="page-links">
+			<a href="#/"><h2>HOME</h2></a>
+			<a href="#/work"><h2>WORK</h2></a>
+			<a href="#/resume"><h2>RESUME</h2></a>
+			<a href="#/testimonials"><h2>TESTIMONIALS</h2></a>
+			<a href="#/aboutme"><h2>ABOUT ME</h2></a>
+		</div>
+	</nav>
+	<div ng-view autoscroll="false" class="content"></div> 
+	<footer>
+		<div><h2>All content is copyright Freeverse Editorial © 2017 unless otherwise stated.</h2><h2>Powered by Diggerous</h2><h2>Copyright stuff</h2></div>
+	</footer>
+	<!-- Modules -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/app.js"></script>  
+	<!-- Controllers -->
+	<script type="text/javascript" src="js/controllers/MainController.js"></script>
+	<script type="text/javascript" src="js/controllers/TestimonialController.js"></script>
+	<script type="text/javascript" src="js/controllers/WorkController.js"></script>
+	<script type="text/javascript" src="js/controllers/AboutController.js"></script>
+	<script type="text/javascript" src="js/controllers/ResumeController.js"></script>
+	<!-- Directives -->
+	<!-- Services -->
+</body>
+</html>

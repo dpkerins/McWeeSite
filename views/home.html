@@ -1,0 +1,31 @@
+<div class="home-main">
+	<div class="home-section-header"><a href="#/aboutme"><h1>About Me</h1></a></div>
+	<div class="home-section">
+		<div>
+			<p>{{ aboutMe.short }}</p>
+		</div>
+		<div>
+			<img class="about-image" src="../img/hope.jpg">
+		</div>
+	</div>
+	<div class="home-section-footer"><a href="#/aboutme"><h3>More about me...</h3></a></div>
+	<div class="home-section-header"><a href="#/work"><h1>Some of My Work</h1></a></div>
+	<div class="home-section">
+		<div ng-repeat="work in works | limitTo: 3">
+			<div class="work-piece">
+				<h3>{{ work.name }}</h3>
+			</div>
+			<div>
+				<p>{{ work.description }}</p>
+			</div>
+		</div>
+	</div>
+	<div class="home-section-footer"><a href="#/work"><h3>More of my work...</h3></a></div>
+	<div class="home-section-header"><a href="#/testimonials"><h1>What did people say about me?</h1></a></div>
+	<div class="home-section">
+		<div ng-repeat="testimonial in testimonials | limitTo: 3">
+			<p>{{ testimonial }}</p>
+		</div>
+	</div>
+	<div class="home-section-footer"><a href="#/testimonials"><h3>More Reviews...</h3></a></div>
+</div>
